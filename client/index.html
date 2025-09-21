@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    
+    <!-- Critical Performance Optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <title>PetWellBot - AI Pet Health Assistant | Free Pet Symptom Checker</title>
+    <meta name="description" content="PetWellBot: Free AI-powered pet health assistant for dogs, cats, birds, rabbits, hamsters, and fish. Get instant guidance for pet symptoms and health concerns.">
+    <meta name="keywords" content="PetWellBot, pet health AI, pet symptom checker, dog health, cat health, bird health, pet care assistant, veterinary AI">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PetWellBot - AI Pet Health Assistant">
+    <meta property="og:description" content="Free AI-powered pet health assistant for all your pet care needs. Get instant guidance for symptoms and health concerns.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&fm=webp&q=85">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PetWellBot - AI Pet Health Assistant">
+    <meta name="twitter:description" content="Free AI-powered pet health guidance for your furry, feathered, and finned friends. Instant symptom checking and care advice.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&fm=webp&q=85">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="PetWellBot">
+    <link rel="canonical" href="https://petwellbot.com">
+    
+    <!-- Favicon and Icons - Universal Setup -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#10b981">
+    
+    <!-- Optimized font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Performance hints for critical pages -->
+    <link rel="prefetch" href="/dog-health-guide">
+    <link rel="prefetch" href="/cat-care-tips">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+    
+    <!-- Performance monitoring script -->
+    <script>
+      // Immediate performance tracking
+      if ('performance' in window) {
+        window.addEventListener('load', function() {
+          setTimeout(function() {
+            const perfData = performance.getEntriesByType('navigation')[0];
+            const loadTime = perfData.loadEventEnd - perfData.navigationStart;
+            console.log(' Page Load Time:', Math.round(loadTime) + 'ms');
+            
+            if (loadTime < 1000) {
+              console.log(' EXCELLENT: Sub-1 second load time achieved!');
+            } else if (loadTime < 2000) {
+              console.log(' GOOD: Under 2 second load time');
+            }
+            
+            // Track Core Web Vitals
+            if ('PerformanceObserver' in window) {
+              // LCP tracking
+              new PerformanceObserver((entryList) => {
+                const entries = entryList.getEntries();
+                const lastEntry = entries[entries.length - 1];
+                console.log(' LCP:', Math.round(lastEntry.startTime) + 'ms');
+              }).observe({ entryTypes: ['largest-contentful-paint'] });
+            }
+          }, 0);
+        });
+      }
+    </script>
+  </body>
+</html>

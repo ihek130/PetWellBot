@@ -1,0 +1,70 @@
+/* Universal Logo Styles - Ensures compatibility across all devices */
+
+/* Logo base styles */
+.logo-universal {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive logo sizing */
+.logo-sm {
+  height: 1.5rem; /* 24px */
+  max-width: 5rem; /* 80px */
+}
+
+.logo-md {
+  height: 2.5rem; /* 40px */
+  max-width: 7.5rem; /* 120px */
+}
+
+.logo-lg {
+  height: 3rem; /* 48px */
+  max-width: 8.75rem; /* 140px */
+}
+
+/* Device-specific optimizations */
+@media (max-width: 640px) {
+  .logo-responsive {
+    height: 1.5rem;
+    max-width: 2.5rem; /* Icon only on very small screens */
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .logo-responsive {
+    height: 2rem;
+    max-width: 6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-responsive {
+    height: 2.5rem;
+    max-width: 7.5rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .logo-dark-auto {
+    filter: brightness(0) invert(1);
+  }
+}
+
+/* High DPI display optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-universal {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print styles */
+@media print {
+  .logo-universal {
+    height: 1rem;
+    max-width: 4rem;
+  }
+}

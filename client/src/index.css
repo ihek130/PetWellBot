@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import './styles/logo.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(33 100% 96%);
+  --foreground: hsl(240 10% 22%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(240 10% 22%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(240 10% 22%);
+  --primary: hsl(172 85% 39%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(25 95% 61%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(33 50% 92%);
+  --muted-foreground: hsl(240 4% 46%);
+  --accent: hsl(199 89% 48%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(356.3033 90.5579% 54.3137%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(240 6% 90%);
+  --input: hsl(200 23.0769% 97.4510%);
+  --ring: hsl(172 85% 39%);
+  --chart-1: hsl(172 85% 39%);
+  --chart-2: hsl(25 95% 61%);
+  --chart-3: hsl(199 89% 48%);
+  --chart-4: hsl(147.1429 78.5047% 41.9608%);
+  --chart-5: hsl(341.4894 75.2000% 50.9804%);
+  --sidebar: hsl(0 0% 100%);
+  --sidebar-foreground: hsl(240 10% 22%);
+  --sidebar-primary: hsl(172 85% 39%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(33 50% 92%);
+  --sidebar-accent-foreground: hsl(172 85% 39%);
+  --sidebar-border: hsl(240 6% 90%);
+  --sidebar-ring: hsl(172 85% 39%);
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.75rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(172 85% 39% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(172 85% 39% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 1px 2px -1px hsl(172 85% 39% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 1px 2px -1px hsl(172 85% 39% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 2px 4px -1px hsl(172 85% 39% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 4px 6px -1px hsl(172 85% 39% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 8px 10px -1px hsl(172 85% 39% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(172 85% 39% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(0 0% 0%);
+  --foreground: hsl(200 6.6667% 91.1765%);
+  --card: hsl(228 9.8039% 10%);
+  --card-foreground: hsl(0 0% 85.0980%);
+  --popover: hsl(0 0% 0%);
+  --popover-foreground: hsl(200 6.6667% 91.1765%);
+  --primary: hsl(172 85% 39%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(25 95% 61%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(0 0% 9.4118%);
+  --muted-foreground: hsl(210 3.3898% 46.2745%);
+  --accent: hsl(199 89% 48%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(356.3033 90.5579% 54.3137%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(210 5.2632% 14.9020%);
+  --input: hsl(207.6923 27.6596% 18.4314%);
+  --ring: hsl(172 85% 39%);
+  --chart-1: hsl(172 85% 39%);
+  --chart-2: hsl(25 95% 61%);
+  --chart-3: hsl(199 89% 48%);
+  --chart-4: hsl(147.1429 78.5047% 41.9608%);
+  --chart-5: hsl(341.4894 75.2000% 50.9804%);
+  --sidebar: hsl(228 9.8039% 10%);
+  --sidebar-foreground: hsl(0 0% 85.0980%);
+  --sidebar-primary: hsl(172 85% 39%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(205.7143 70% 7.8431%);
+  --sidebar-accent-foreground: hsl(172 85% 39%);
+  --sidebar-border: hsl(205.7143 15.7895% 26.0784%);
+  --sidebar-ring: hsl(172 85% 39%);
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.75rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(172 85% 39% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(172 85% 39% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 1px 2px -1px hsl(172 85% 39% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 1px 2px -1px hsl(172 85% 39% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 2px 4px -1px hsl(172 85% 39% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 4px 6px -1px hsl(172 85% 39% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(172 85% 39% / 0.00), 0px 8px 10px -1px hsl(172 85% 39% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(172 85% 39% / 0.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom styles for the pet health app */
+.gradient-bg {
+  background: linear-gradient(135deg, var(--background) 0%, hsl(33 100% 98%) 100%);
+}
+
+.pet-card:hover .pet-emoji {
+  animation: bounce 0.6s ease-in-out;
+}
+
+.chat-bubble-user {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+.chat-bubble-bot {
+  background: linear-gradient(135deg, var(--card), hsl(33 50% 96%));
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.typing-indicator {
+  animation: pulse-gentle 1.5s infinite;
+}
+
+/* Ad Space Styling */
+.ad-space {
+  background: linear-gradient(45deg, hsl(0 0% 96%), hsl(0 0% 98%));
+  border: 2px dashed var(--border);
+}
+
+/* Performance optimizations */
+.pet-card {
+  will-change: transform;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+.pet-card:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Modal Animations - Professional & Smooth */
+@keyframes modal-slide-in-mobile {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-slide-out-mobile {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes modal-fade-in-desktop {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes modal-fade-out-desktop {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+}
+
+@keyframes backdrop-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Utility classes for animations */
+.animate-in {
+  animation-fill-mode: forwards;
+}
+
+.slide-in-from-bottom-full {
+  animation: modal-slide-in-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-in-from-bottom-8 {
+  animation: modal-fade-in-desktop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-in {
+  animation: backdrop-fade-in 0.2s ease-out;
+}
+
+/* Responsive modal behavior */
+@media (max-width: 768px) {
+  .slide-in-from-bottom-8 {
+    animation: modal-slide-in-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+/* Backdrop blur enhancement */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
