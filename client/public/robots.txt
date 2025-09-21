@@ -29,10 +29,6 @@ Crawl-delay: 1
 # Primary sitemap location
 Sitemap: https://petwellbot.com/sitemap.xml
 
-# Alternative sitemap formats for comprehensive coverage
-Sitemap: https://petwellbot.com/sitemap-images.xml
-Sitemap: https://petwellbot.com/sitemap-pages.xml
-
 # Google-specific optimizations
 User-agent: Googlebot
 Allow: /
