@@ -1,0 +1,66 @@
+{
+  "name": "PetWellBot - AI Pet Health Assistant",
+  "short_name": "PetWellBot",
+  "description": "Free AI-powered pet health assistant for dogs, cats, birds, and small pets. Instant symptom checking and health guidance.",
+  "id": "/",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#10b981",
+  "background_color": "#ffffff",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["health", "medical", "pets", "lifestyle", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Dog Health Guide",
+      "short_name": "Dogs",
+      "description": "Complete guide for dog health problems and care",
+      "url": "/dog-health-guide",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Cat Care Tips",
+      "short_name": "Cats", 
+      "description": "Essential cat health and wellness guide",
+      "url": "/cat-care-tips",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Symptom Checker",
+      "short_name": "Symptoms",
+      "description": "Quick pet symptom analysis and guidance",
+      "url": "/?tab=symptoms",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "AI Chat Assistant",
+      "short_name": "Chat",
+      "description": "Talk to our AI pet health assistant",
+      "url": "/?chat=open",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}

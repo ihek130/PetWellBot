@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="16" height="16" rx="3" fill="#10b981"/>
+  
+  <!-- Paw print icon - smaller version -->
+  <g fill="#ffffff">
+    <!-- Main pad -->
+    <ellipse cx="8" cy="9" rx="1.8" ry="2"/>
+    <!-- Toe pads -->
+    <circle cx="6.5" cy="6" r="0.9"/>
+    <circle cx="8" cy="5" r="0.9"/>
+    <circle cx="9.5" cy="6" r="0.9"/>
+    <circle cx="8" cy="7" r="0.6"/>
+  </g>
+</svg>
