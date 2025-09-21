@@ -1,0 +1,16 @@
+<!-- Universal SVG Favicon - Scalable icon -->
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#10b981"/>
+  
+  <!-- Paw print icon -->
+  <g fill="#ffffff">
+    <!-- Main pad -->
+    <ellipse cx="16" cy="18" rx="3.5" ry="4"/>
+    <!-- Toe pads -->
+    <circle cx="13" cy="12" r="1.8"/>
+    <circle cx="16" cy="10" r="1.8"/>
+    <circle cx="19" cy="12" r="1.8"/>
+    <circle cx="16" cy="14" r="1.2"/>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://petwellbot.com/</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>PetWellBot AI Pet Health Assistant</image:caption>
+      <image:title>Free Pet Health AI Assistant</image:title>
+    </image:image>
+  </url>
+
+  <!-- Primary Pet Care Guides - High Priority -->
+  <url>
+    <loc>https://petwellbot.com/dog-health-guide</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Complete Dog Health Guide 2025</image:caption>
+      <image:title>Dog Health Problems and Solutions</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/cat-care-tips</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Essential Cat Care Tips and Health Guide</image:caption>
+      <image:title>Cat Health and Wellness Guide</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/bird-health-basics</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1452570053594-1b985d6ea890?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Bird Health Basics and Care Guide</image:caption>
+      <image:title>Complete Bird Health and Wellness</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/small-pet-care</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Small Pet Care Guide - Rabbits, Hamsters, Guinea Pigs</image:caption>
+      <image:title>Complete Small Pet Health Guide</image:title>
+    </image:image>
+  </url>
+
+  <!-- Symptom-Specific Pages - High Priority for Featured Snippets -->
+  <url>
+    <loc>https://petwellbot.com/digestive-issues</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Pet Digestive Issues - Symptoms and Solutions</image:caption>
+      <image:title>Pet Digestive Health Guide</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/vomiting-nausea</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Pet Vomiting and Nausea - When to Worry</image:caption>
+      <image:title>Pet Vomiting Treatment Guide</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/loss-of-appetite</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Pet Loss of Appetite - Causes and Solutions</image:caption>
+      <image:title>Pet Appetite Problems Guide</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/lethargy-fatigue</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630</image:loc>
+      <image:caption>Pet Lethargy and Fatigue - Warning Signs</image:caption>
+      <image:title>Pet Energy and Wellness Guide</image:title>
+    </image:image>
+  </url>
+
+  <!-- Legal/Policy Pages - Lower Priority but Required for Trust -->
+  <url>
+    <loc>https://petwellbot.com/privacy-policy</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/terms-of-service</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://petwellbot.com/medical-disclaimer</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
