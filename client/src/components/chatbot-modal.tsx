@@ -266,10 +266,16 @@ export function ChatbotTrigger({ onClick }: { onClick: () => void }) {
     <Button
       onClick={onClick}
       size="lg"
-      className="w-full h-16 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200"
+      className="w-full min-h-16 px-4 py-3 text-sm sm:text-base md:text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200 leading-tight break-words hyphens-auto"
+      style={{
+        wordWrap: 'break-word',
+        overflowWrap: 'anywhere',
+        whiteSpace: 'normal',
+        lineHeight: '1.2'
+      }}
     >
-      <MessageCircle className="w-6 h-6 mr-3" />
-      Start Chat with PetWellBot
+      <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" />
+      <span className="flex-1">Start Chat with PetWellBot</span>
     </Button>
   );
 }

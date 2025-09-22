@@ -53,29 +53,43 @@ export function FAQSection() {
 
   return (
     <section id="faq" className="mt-16">
-      <Card className="p-8 shadow-lg">
-        <h2 className="text-3xl font-bold text-foreground text-center mb-8">
+      <Card className="p-6 sm:p-8 shadow-lg">
+        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-6 sm:mb-8 leading-tight">
           Frequently Asked Pet Health Questions
         </h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           {faqData.map((item) => (
-            <div key={item.id} className="border border-border rounded-lg overflow-hidden">
+            <div key={item.id} className="border border-border rounded-lg overflow-hidden bg-card">
               <Button
                 variant="ghost"
-                className="w-full text-left p-4 font-semibold text-foreground hover:bg-primary/10 hover:text-primary transition-colors flex justify-between items-center h-auto"
+                className="w-full text-left p-3 sm:p-4 font-semibold text-foreground hover:bg-primary/10 hover:text-primary transition-colors flex justify-between items-start gap-3 h-auto min-h-[60px]"
                 onClick={() => toggleItem(item.id)}
                 data-testid={`button-faq-${item.id}`}
+                style={{
+                  wordWrap: 'break-word',
+                  overflowWrap: 'anywhere',
+                  whiteSpace: 'normal'
+                }}
               >
-                <span className="flex-1 text-left">{item.question}</span>
-                {openItems.has(item.id) ? (
-                  <ChevronUp className="w-5 h-5 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 flex-shrink-0" />
-                )}
+                <span className="flex-1 text-left text-sm sm:text-base leading-snug pr-2 break-words hyphens-auto">
+                  {item.question}
+                </span>
+                <div className="flex-shrink-0 mt-1">
+                  {openItems.has(item.id) ? (
+                    <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5" />
+                  ) : (
+                    <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5" />
+                  )}
+                </div>
               </Button>
               {openItems.has(item.id) && (
-                <div className="p-4 pt-0 text-muted-foreground border-t border-border">
-                  <p>{item.answer}</p>
+                <div className="p-3 sm:p-4 pt-0 text-muted-foreground border-t border-border">
+                  <p className="text-sm sm:text-base leading-relaxed break-words hyphens-auto" style={{
+                    wordWrap: 'break-word',
+                    overflowWrap: 'anywhere'
+                  }}>
+                    {item.answer}
+                  </p>
                 </div>
               )}
             </div>
