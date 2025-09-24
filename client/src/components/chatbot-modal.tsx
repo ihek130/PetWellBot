@@ -38,6 +38,31 @@ export function ChatbotModal({ isOpen, onClose }: ChatbotModalProps) {
     submitMessageFeedback,
   } = useChatbot();
 
+  // Handle pre-filled symptoms from floating widget
+  useEffect(() => {
+    const handleSymptomSelected = (event: CustomEvent) => {
+      const symptom = event.detail.symptom;
+      if (symptom && symptom !== 'general_consultation') {
+        setMessageInput(`My pet is showing symptoms: ${symptom.toLowerCase()}. Can you help me understand what this might mean?`);
+      }
+    };
+
+    if (isOpen) {
+      window.addEventListener('petwell_symptom_selected', handleSymptomSelected as EventListener);
+      
+      // Also check localStorage for any stored symptom
+      const storedSymptom = localStorage.getItem('petwell_selected_symptom');
+      if (storedSymptom && storedSymptom !== 'general_consultation') {
+        setMessageInput(`My pet is showing symptoms: ${storedSymptom.toLowerCase()}. Can you help me understand what this might mean?`);
+        localStorage.removeItem('petwell_selected_symptom');
+      }
+    }
+
+    return () => {
+      window.removeEventListener('petwell_symptom_selected', handleSymptomSelected as EventListener);
+    };
+  }, [isOpen]);
+
   // Handle ESC key press
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -263,20 +288,52 @@ export function ChatbotModal({ isOpen, onClose }: ChatbotModalProps) {
 // Trigger Button Component
 export function ChatbotTrigger({ onClick }: { onClick: () => void }) {
   return (
-    <Button
-      onClick={onClick}
-      size="lg"
-      className="w-full min-h-16 px-4 py-3 text-sm sm:text-base md:text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200 leading-tight break-words hyphens-auto"
-      style={{
-        wordWrap: 'break-word',
-        overflowWrap: 'anywhere',
-        whiteSpace: 'normal',
-        lineHeight: '1.2'
-      }}
-    >
-      <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" />
-      <span className="flex-1">Start Chat with PetWellBot</span>
-    </Button>
+    <div className="space-y-3">
+      <Button
+        onClick={onClick}
+        size="lg"
+        className="w-full min-h-16 px-4 py-3 text-sm sm:text-base md:text-lg font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg hover:shadow-xl transition-all duration-200 leading-tight break-words hyphens-auto"
+        style={{
+          wordWrap: 'break-word',
+          overflowWrap: 'anywhere',
+          whiteSpace: 'normal',
+          lineHeight: '1.2'
+        }}
+      >
+        <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" />
+        <span className="flex-1">� Describe Symptoms - Get Expert Help</span>
+      </Button>
+      
+      {/* Quick Action Buttons */}
+      <div className="grid grid-cols-2 gap-2">
+        {quickSymptoms.map((symptom, index) => {
+          const isUrgent = symptom === "Not eating" || symptom === "Vomiting";
+          return (
+            <Button
+              key={index}
+              onClick={onClick}
+              variant="outline"
+              size="sm"
+              className={`text-xs font-medium transition-colors ${
+                isUrgent 
+                  ? 'hover:bg-orange-50 hover:border-orange-200 text-orange-700 border-orange-100'
+                  : 'hover:bg-emerald-50 hover:border-emerald-200 text-emerald-700 border-emerald-100'
+              }`}
+            >
+              {symptom === "Not eating" && "🍽️"} 
+              {symptom === "Vomiting" && "🤢"}
+              {symptom === "Diarrhea" && "💩"}
+              {symptom === "Lethargy" && "😴"}
+              {" " + symptom}
+            </Button>
+          );
+        })}
+      </div>
+      
+      <p className="text-center text-xs text-gray-600">
+        ⚡ Average response time: 10 seconds • Available 24/7
+      </p>
+    </div>
   );
 }
 

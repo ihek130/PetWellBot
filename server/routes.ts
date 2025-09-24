@@ -170,7 +170,7 @@ Keep responses caring, practical, and informative while staying within these bou
         body: JSON.stringify({
           model: MODEL,
           messages,
-          max_tokens: 150,
+          max_tokens: 600,
           temperature: 0.7
         })
       }

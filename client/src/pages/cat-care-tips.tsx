@@ -26,11 +26,11 @@ export default function CatCareTips() {
               solve behavioral issues, health problems, and keep your feline friend thriving.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" className="bg-white text-pink-600 hover:bg-pink-50">
+              <Button size="lg" className="bg-pink-600 text-white hover:bg-gray-50 hover:text-pink-700 shadow-lg">
                 <Heart className="w-5 h-5 mr-2" />
                 Get Cat Health Advice
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-pink-600">
+              <Button size="lg" className="bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-pink-600 shadow-lg">
                 Cat Behavior Solutions
               </Button>
             </div>
@@ -333,10 +333,18 @@ export default function CatCareTips() {
                   Our AI cat health assistant provides personalized guidance for your feline friend's needs
                 </p>
                 <Link to="/">
-                  <Button size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
-                    <Heart className="w-5 h-5 mr-2" />
-                    Ask About Your Cat's Behavior - Free
-                    <ArrowRight className="w-5 h-5 ml-2" />
+                  <Button 
+                    size="lg" 
+                    className="bg-pink-600 text-white hover:bg-gray-50 hover:text-pink-700 shadow-lg hover:shadow-xl transition-all duration-200 font-semibold text-sm sm:text-base break-words hyphens-auto px-4 py-3 min-h-12"
+                    style={{
+                      wordWrap: 'break-word',
+                      overflowWrap: 'anywhere',
+                      whiteSpace: 'normal'
+                    }}
+                  >
+                    <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
+                    <span className="flex-1">Ask About Your Cat's Behavior - Free</span>
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 flex-shrink-0" />
                   </Button>
                 </Link>
                 <p className="text-sm mt-4 text-pink-100">

@@ -36,13 +36,13 @@ export default function DogHealthGuide() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link to="/">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                <Button size="lg" className="bg-blue-600 text-white hover:bg-gray-50 hover:text-blue-700 shadow-lg">
                   <Heart className="w-5 h-5 mr-2" />
                   Free Dog Health Check
                 </Button>
               </Link>
               <Link to="/">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" className="bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-blue-600 shadow-lg">
                   Emergency Dog Care Guide
                 </Button>
               </Link>
@@ -274,10 +274,18 @@ export default function DogHealthGuide() {
                   Our AI-powered pet health assistant provides immediate guidance for your dog health concerns
                 </p>
                 <Link to="/">
-                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-                    <Heart className="w-5 h-5 mr-2" />
-                    Check Your Dog's Symptoms Now - Free
-                    <ArrowRight className="w-5 h-5 ml-2" />
+                  <Button 
+                    size="lg" 
+                    className="bg-green-600 text-white hover:bg-gray-50 hover:text-green-700 shadow-lg hover:shadow-xl transition-all duration-200 font-semibold text-sm sm:text-base break-words hyphens-auto px-4 py-3 min-h-12"
+                    style={{
+                      wordWrap: 'break-word',
+                      overflowWrap: 'anywhere',
+                      whiteSpace: 'normal'
+                    }}
+                  >
+                    <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
+                    <span className="flex-1">Check Your Dog's Symptoms Now - Free</span>
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 flex-shrink-0" />
                   </Button>
                 </Link>
                 <p className="text-sm mt-4 text-green-100">

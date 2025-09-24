@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail } from "lucide-react";
-import { ChatbotModal, ChatbotTrigger } from "@/components/chatbot-modal";
+import { ChatbotTrigger } from "@/components/chatbot-modal";
 import { FAQSection } from "@/components/faq-section";
 import { EmailModal } from "@/components/email-modal";
 import { SEOHead } from "@/components/seo-head";
@@ -11,6 +11,9 @@ import { SeasonalHealth } from "@/components/seasonal-health";
 import { AgeSpecificCare } from "@/components/age-specific-care";
 import { AdvancedEmergency } from "@/components/advanced-emergency";
 import { Logo } from "../components/logo";
+import { SocialProofBanner } from "../components/social-proof-banner";
+import { TestimonialCarousel } from "../components/testimonial-carousel";
+import { TrustIndicators } from "../components/trust-indicators";
 
 const pets = [
   { emoji: "🐕", label: "Dogs" },
@@ -30,7 +33,11 @@ const trustFeatures = [
 
 export default function Home() {
   const [emailModalOpen, setEmailModalOpen] = useState(false);
-  const [isChatbotModalOpen, setIsChatbotModalOpen] = useState(false);
+  
+  const handleChatbotOpen = () => {
+    // Dispatch event to open global chatbot modal
+    window.dispatchEvent(new CustomEvent('open_chatbot_modal'));
+  };
 
   useEffect(() => {
     // Force page to start at top, override any browser auto-scroll to anchors
@@ -75,6 +82,9 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Social Proof Banner */}
+      <SocialProofBanner />
+
       {/* Main Content - Mobile Optimized */}
       <main className="container mx-auto px-6 py-8 md:px-4">
         <div className="flex flex-col lg:grid lg:grid-cols-4 gap-8 lg:gap-6">
@@ -99,14 +109,27 @@ export default function Home() {
 
           {/* Center - Chatbot Interface - Priority on Mobile */}
           <div className="order-2 lg:order-2 lg:col-span-2" id="chatbot">
-            <Card className="p-8 shadow-lg md:p-6">
+            <Card className="p-8 shadow-lg md:p-6 border-l-4 border-l-emerald-400">
               <div className="text-center mb-6">
-                <h2 className="text-2xl font-bold text-foreground mb-3 md:text-xl">Talk to Our AI Pet Expert</h2>
-                <p className="text-muted-foreground text-lg md:text-base">
-                  Get instant help identifying potential health issues for your pet
+                <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                  🌿 Pet Health Expert Available
+                </div>
+                <h2 className="text-2xl font-bold text-foreground mb-3 md:text-xl">
+                  Is Your Pet Acting Strange?
+                </h2>
+                <p className="text-lg font-semibold text-emerald-700 mb-2 md:text-base">
+                  Get Expert AI Analysis in 10 Seconds
+                </p>
+                <p className="text-muted-foreground text-base md:text-sm">
+                  Professional symptom analysis • Trusted by thousands • Available 24/7
                 </p>
               </div>
-              <ChatbotTrigger onClick={() => setIsChatbotModalOpen(true)} />
+              <ChatbotTrigger onClick={handleChatbotOpen} />
+              
+              {/* Quick Stats Below CTA */}
+              <div className="mt-6 pt-4 border-t border-gray-100">
+                <TrustIndicators />
+              </div>
             </Card>
           </div>
 
@@ -126,6 +149,11 @@ export default function Home() {
               </div>
             </Card>
           </div>
+        </div>
+
+        {/* Testimonials Section */}
+        <div className="mt-12 md:mt-8">
+          <TestimonialCarousel />
         </div>
 
         {/* FAQ Section - Mobile Optimized */}
@@ -198,12 +226,7 @@ export default function Home() {
 
       {/* Email Modal */}
       <EmailModal open={emailModalOpen} onOpenChange={setEmailModalOpen} />
-      
-      {/* Chatbot Modal */}
-      <ChatbotModal
-        isOpen={isChatbotModalOpen}
-        onClose={() => setIsChatbotModalOpen(false)}
-      />
+
     </div>
   );
 }

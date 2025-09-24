@@ -4,10 +4,14 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "./components/ui/toaster";
 import { TooltipProvider } from "./components/ui/tooltip";
 import { trackPerformance, addResourceHints } from "./lib/performance";
-import { Suspense, useEffect, lazy } from "react";
+import { Suspense, useEffect, lazy, useState } from "react";
 
 // Immediate load components (critical path)
 import Home from "./pages/home";
+import { ChatbotModal } from "./components/chatbot-modal";
+
+// Lazy load chat widget for performance (loads after initial render)
+const FloatingChatWidget = lazy(() => import("./components/floating-chat-widget"));
 
 // Lazy load secondary pages for performance
 const DogHealthGuide = lazy(() => import("./pages/dog-health-guide"));
@@ -56,16 +60,42 @@ function Router() {
 }
 
 export default function App() {
+  const [isChatbotModalOpen, setIsChatbotModalOpen] = useState(false);
+
   useEffect(() => {
     // Initialize performance optimizations
     addResourceHints();
     trackPerformance();
+    
+    // Listen for global chatbot open events
+    const handleOpenChatbot = () => setIsChatbotModalOpen(true);
+    window.addEventListener('open_chatbot_modal', handleOpenChatbot);
+    
+    // Track chat widget impressions for analytics
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      requestIdleCallback(() => {
+        (window as any).gtag('event', 'chat_widget_impression', {
+          timestamp: new Date().toISOString(),
+        });
+      });
+    }
+
+    return () => {
+      window.removeEventListener('open_chatbot_modal', handleOpenChatbot);
+    };
   }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Router />
+        <Suspense fallback={null}>
+          <FloatingChatWidget onChatStart={() => setIsChatbotModalOpen(true)} />
+        </Suspense>
+        <ChatbotModal 
+          isOpen={isChatbotModalOpen} 
+          onClose={() => setIsChatbotModalOpen(false)} 
+        />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
