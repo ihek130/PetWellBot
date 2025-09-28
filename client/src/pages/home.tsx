@@ -25,10 +25,10 @@ const pets = [
 ];
 
 const trustFeatures = [
-  { icon: "✓", color: "text-green-600 bg-green-100", text: "AI-powered symptom analysis" },
+  { icon: "✓", color: "text-green-600 bg-green-100", text: "AI-powered pet symptom analysis" },
   { icon: "🔒", color: "text-blue-600 bg-blue-100", text: "100% Free & Private" },
-  { icon: "📚", color: "text-purple-600 bg-purple-100", text: "Educational purposes only" },
-  { icon: "⚡", color: "text-orange-600 bg-orange-100", text: "Instant responses" },
+  { icon: "📚", color: "text-purple-600 bg-purple-100", text: "Emergency decision guidance" },
+  { icon: "⚡", color: "text-orange-600 bg-orange-100", text: "Instant health responses" },
 ];
 
 export default function Home() {
@@ -118,10 +118,10 @@ export default function Home() {
                   Is Your Pet Acting Strange?
                 </h2>
                 <p className="text-lg font-semibold text-emerald-700 mb-2 md:text-base">
-                  Get Expert AI Analysis in 10 Seconds
+                  Get Expert AI Pet Health Analysis in 10 Seconds
                 </p>
                 <p className="text-muted-foreground text-base md:text-sm">
-                  Professional symptom analysis • Trusted by thousands • Available 24/7
+                  Emergency symptom analysis • When to call vet guidance • Available 24/7
                 </p>
               </div>
               <ChatbotTrigger onClick={handleChatbotOpen} />
@@ -184,7 +184,7 @@ export default function Home() {
                 <span className="font-bold text-foreground">Pet Symptom Checker</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                Free AI-powered pet health assistant for dogs, cats, birds, rabbits, hamsters, and fish. Educational guidance only.
+                Free AI pet health assistant and symptom checker for dogs, cats, birds, rabbits, hamsters, and fish. Emergency decision guidance - educational purposes only.
               </p>
             </div>
             
@@ -199,10 +199,10 @@ export default function Home() {
             </div>
             
             <div>
-              <h4 className="font-semibold text-foreground mb-4">Quick Symptoms</h4>
+              <h4 className="font-semibold text-foreground mb-4">Emergency Symptoms</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/vomiting-nausea" className="hover:text-primary">Vomiting & Nausea</Link></li>
-                <li><Link href="/loss-of-appetite" className="hover:text-primary">Loss of Appetite</Link></li>
+                <li><Link href="/vomiting-nausea" className="hover:text-primary">Dog & Cat Vomiting</Link></li>
+                <li><Link href="/loss-of-appetite" className="hover:text-primary">Pet Not Eating or Drinking</Link></li>
                 <li><Link href="/lethargy-fatigue" className="hover:text-primary">Lethargy & Fatigue</Link></li>
                 <li><Link href="/digestive-issues" className="hover:text-primary">Digestive Issues</Link></li>
               </ul>

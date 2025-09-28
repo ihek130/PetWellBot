@@ -6,13 +6,38 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const faqData = [
   {
     id: "dog-vomiting",
-    question: "Why is my dog vomiting yellow foam?",
+    question: "Why is my dog vomiting yellow?",
     answer: "Dog vomiting yellow foam causes typically include empty stomach bile, eating too fast, dietary changes, or stress. If your dog vomits yellow foam repeatedly, has other symptoms, or seems unwell, consult your veterinarian. Learn more about dog vomiting causes in our detailed guides.",
   },
   {
     id: "cat-not-eating",
     question: "My cat is not eating but drinking water - what should I do?",
     answer: "When a cat is not eating but drinking water, it could indicate dental problems, stress, illness, or food aversion. Monitor for 24 hours, try different foods, and consult a vet if the behavior continues. Read about cat eating problems for comprehensive guidance.",
+  },
+  {
+    id: "bird-tail-bobbing",
+    question: "Is bird tail bobbing always an emergency?",
+    answer: "Bird tail bobbing often indicates respiratory distress and is usually a serious emergency requiring immediate avian veterinary attention. However, very mild tail movement during sleep or after exertion may be normal. If your bird is tail bobbing while awake, sitting on the cage bottom, breathing with an open beak, or showing fluffed feathers, seek emergency vet care immediately. Birds hide illness well and can deteriorate rapidly. Use our AI pet health assistant to assess your bird's specific symptoms and get guidance on whether this requires emergency vet attention tonight or can wait until morning.",
+  },
+  {
+    id: "rabbit-not-eating",
+    question: "When should I worry about my rabbit not eating?",
+    answer: "Rabbits not eating for more than 12 hours is considered a veterinary emergency due to risk of GI stasis, a potentially fatal condition. Unlike dogs and cats, rabbits must eat continuously to maintain proper digestive function. If your rabbit hasn't eaten for 6-8 hours, try offering favorite fresh herbs, hay, or pellets. After 12 hours with no food intake, seek emergency veterinary care immediately. Signs that make this more urgent include not producing feces, hunched posture, grinding teeth, or lethargy. Our AI emergency decision tool can help assess your rabbit's symptoms and determine if immediate vet attention is needed.",
+  },
+  {
+    id: "should-call-vet-tonight",
+    question: "Should I call the vet tonight or wait until morning?",
+    answer: "Call the emergency vet tonight if your pet shows difficulty breathing, severe bleeding, unconsciousness, repeated vomiting, inability to urinate, suspected poisoning, severe pain, or bloated abdomen. For less severe symptoms like mild lethargy, slight appetite changes, or minor limping without visible injury, monitoring until morning may be appropriate. However, trust your instincts - you know your pet best. Puppies, kittens, senior pets, and those with chronic conditions should be seen sooner rather than later. Our AI pet health assistant analyzes your pet's specific symptoms, age, and medical history to provide personalized guidance on whether emergency care is needed tonight.",
+  },
+  {
+    id: "hamster-emergency",
+    question: "How do I know if my hamster needs emergency vet care?",
+    answer: "Hamster emergencies include not moving for several hours, difficulty breathing, wet tail (diarrhea around tail area), not eating or drinking for 24+ hours, bleeding, seizures, or dramatic temperature changes in their environment. Hamsters are prey animals that hide illness, so any sudden behavior change warrants attention. Check if they're responsive to gentle touch, if their cage temperature is appropriate (65-75°F), and if they've been eating, drinking, and producing waste normally. Because hamsters have fast metabolisms, they can decline quickly when ill. Use our AI pet health assistant to evaluate your hamster's symptoms and get immediate guidance on emergency vs routine care needs.",
+  },
+  {
+    id: "ai-pet-accuracy",
+    question: "How accurate is AI for pet emergency decisions?",
+    answer: "Our AI pet health assistant uses veterinary emergency protocols and symptom assessment guidelines to help determine urgency levels for common pet health situations. While AI cannot replace professional veterinary diagnosis, it excels at analyzing multiple symptoms together, considering your pet's age and breed factors, and providing consistent guidance based on established emergency criteria. The AI is most accurate for well-documented conditions and emergency vs non-emergency decisions. It's designed as a decision-support tool to help you determine timing - whether you need emergency care now, can schedule a regular appointment, or can monitor at home safely. Always seek professional veterinary care for definitive diagnosis and treatment.",
   },
   {
     id: "puppy-diarrhea",
@@ -54,10 +79,13 @@ export function FAQSection() {
   return (
     <section id="faq" className="mt-16">
       <Card className="p-6 sm:p-8 shadow-lg">
-        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-6 sm:mb-8 leading-tight">
-          Frequently Asked Pet Health Questions
+        <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-4 sm:mb-6 leading-tight">
+          Pet Emergency Questions - AI Health Assistant
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+        <p className="text-center text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 max-w-3xl mx-auto">
+          Get instant guidance on pet emergencies and health concerns. Our AI assistant helps you decide when to call the vet for dogs, cats, birds, rabbits, and small pets.
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:items-start">
           {faqData.map((item) => (
             <div key={item.id} className="border border-border rounded-lg overflow-hidden bg-card">
               <Button
@@ -84,12 +112,17 @@ export function FAQSection() {
               </Button>
               {openItems.has(item.id) && (
                 <div className="p-3 sm:p-4 pt-0 text-muted-foreground border-t border-border">
-                  <p className="text-sm sm:text-base leading-relaxed break-words hyphens-auto" style={{
+                  <p className="text-sm sm:text-base leading-relaxed break-words hyphens-auto mb-3 sm:mb-4" style={{
                     wordWrap: 'break-word',
                     overflowWrap: 'anywhere'
                   }}>
                     {item.answer}
                   </p>
+                  <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-2 sm:p-3">
+                    <p className="text-xs sm:text-sm text-emerald-700 text-center">
+                      💬 <strong>Need personalized assessment?</strong> Use our AI pet health assistant below for instant guidance on your specific situation.
+                    </p>
+                  </div>
                 </div>
               )}
             </div>

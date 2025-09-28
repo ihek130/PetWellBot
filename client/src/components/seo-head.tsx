@@ -16,9 +16,9 @@ interface SEOHeadProps {
 }
 
 export function SEOHead({ 
-  title = "Pet Symptom Checker - Free Online Pet Health Assistant | Dog Cat Bird Symptoms",
-  description = "Free pet symptom checker for dogs, cats, birds, rabbits, hamsters, and fish. Get instant AI-powered pet health guidance for common symptoms like vomiting, diarrhea, not eating, sneezing, and more.",
-  keywords = "pet symptom checker, dog vomiting yellow foam causes, cat not eating but drinking water, puppy diarrhea home remedies, bird sneezing reasons, hamster not moving symptoms, free pet health assistant",
+  title = "AI Pet Symptom Checker - Free Online Pet Health Assistant | Emergency Decision Tool",
+  description = "AI-powered pet symptom checker for dogs, cats, birds, rabbits, hamsters, and fish. Get instant emergency guidance for pet symptoms like vomiting, not eating, breathing problems. When to call vet or wait - free pet health assistant.",
+  keywords = "AI pet symptom checker, pet health chatbot, dog not eating or drinking what to do, cat not eating but drinking water, bird tail bobbing emergency, puppy vomiting yellow foam emergency, when to call vet tonight, pet emergency decision tool, free online pet health assistant, AI pet health assistant",
   canonicalUrl,
   ogImage = "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630",
   ogType = "website",
