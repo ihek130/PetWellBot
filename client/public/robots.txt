@@ -23,21 +23,16 @@ Allow: /*.png
 Allow: /*.jpg
 Allow: /*.webp
 
-# Optimize crawl rate for fast indexing
-Crawl-delay: 1
-
 # Primary sitemap location
 Sitemap: https://petwellbot.com/sitemap.xml
 
 # Google-specific optimizations
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 # Bing optimization
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 # Block AI training crawlers while allowing search indexing
 User-agent: GPTBot
