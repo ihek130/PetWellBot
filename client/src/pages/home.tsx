@@ -211,6 +211,8 @@ export default function Home() {
             <div>
               <h4 className="font-semibold text-foreground mb-4">Connect</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/about" className="hover:text-primary">About Us</Link></li>
+                <li><Link href="/contact" className="hover:text-primary">Contact Us</Link></li>
                 <li><Link href="/privacy-policy" className="hover:text-primary">Privacy Policy</Link></li>
                 <li><Link href="/terms-of-service" className="hover:text-primary">Terms of Service</Link></li>
                 <li><Link href="/medical-disclaimer" className="hover:text-primary">Medical Disclaimer</Link></li>
@@ -219,7 +221,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 Pet Symptom Checker. All rights reserved. This tool is for educational purposes only and does not replace professional veterinary advice.</p>
+            <p>&copy; 2025 Pet Symptom Checker. All rights reserved. This tool is for educational purposes only and does not replace professional veterinary advice.</p>
           </div>
         </div>
       </footer>

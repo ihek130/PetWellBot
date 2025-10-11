@@ -5,6 +5,7 @@ import { Toaster } from "./components/ui/toaster";
 import { TooltipProvider } from "./components/ui/tooltip";
 import { trackPerformance, addResourceHints } from "./lib/performance";
 import { Suspense, useEffect, lazy, useState } from "react";
+// Updated with Contact page
 
 // Immediate load components (critical path)
 import Home from "./pages/home";
@@ -25,6 +26,8 @@ const LethargyFatigue = lazy(() => import("./pages/lethargy-fatigue"));
 const PrivacyPolicy = lazy(() => import("./pages/privacy-policy"));
 const TermsOfService = lazy(() => import("./pages/terms-of-service"));
 const MedicalDisclaimer = lazy(() => import("./pages/medical-disclaimer"));
+const Contact = lazy(() => import("./pages/contact"));
+const About = lazy(() => import("./pages/about"));
 const NotFound = lazy(() => import("./pages/not-found"));
 
 // Performance-optimized loading component
@@ -53,6 +56,8 @@ function Router() {
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
         <Route path="/medical-disclaimer" component={MedicalDisclaimer} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/about" component={About} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

@@ -147,20 +147,32 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
+    <loc>https://petwellbot.com/about</loc>
+    <lastmod>2025-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/contact</loc>
+    <lastmod>2025-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://petwellbot.com/privacy-policy</loc>
-    <lastmod>2025-09-22</lastmod>
+    <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://petwellbot.com/terms-of-service</loc>
-    <lastmod>2025-09-22</lastmod>
+    <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://petwellbot.com/medical-disclaimer</loc>
-    <lastmod>2025-09-22</lastmod>
+    <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
