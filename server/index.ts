@@ -147,6 +147,347 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
+    <loc>https://petwellbot.com/symptoms</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Pet Symptom Library - 30+ Expert Guides</image:caption>
+      <image:title>Pet Symptom Directory</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-vomiting-yellow-foam</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Vomiting Yellow Foam - Causes &amp; Treatment</image:caption>
+      <image:title>Dog Vomiting Yellow Foam</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-ate-chocolate</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Ate Chocolate - Emergency Response Guide</image:caption>
+      <image:title>Dog Chocolate Toxicity</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-limping-no-pain</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Limping But No Pain - What It Means</image:caption>
+      <image:title>Dog Limping No Pain</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-wont-drink-water</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Won't Drink Water - Causes &amp; Solutions</image:caption>
+      <image:title>Dog Not Drinking Water</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-diarrhea-blood</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Diarrhea with Blood - Emergency Guide</image:caption>
+      <image:title>Dog Bloody Diarrhea</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/senior-dog-weak-hind-legs</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Senior Dog Weak Hind Legs - Causes &amp; Care</image:caption>
+      <image:title>Senior Dog Weak Legs</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/puppy-eating-grass-frantically</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Puppy Eating Grass Frantically - What to Do</image:caption>
+      <image:title>Puppy Eating Grass</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-shaking-wont-eat</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Shaking and Won't Eat - Emergency Signs</image:caption>
+      <image:title>Dog Shaking Not Eating</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-breathing-fast-sleeping</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Breathing Fast While Sleeping - Normal or Not?</image:caption>
+      <image:title>Dog Fast Breathing Sleep</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/dog-licking-paws-frantically</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Dog Licking Paws Frantically - Causes &amp; Relief</image:caption>
+      <image:title>Dog Licking Paws</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-vomiting-undigested-food</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Vomiting Undigested Food - Causes &amp; Treatment</image:caption>
+      <image:title>Cat Vomiting Undigested</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-not-eating-drinking</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Not Eating or Drinking - Emergency Guide</image:caption>
+      <image:title>Cat Not Eating Drinking</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-hiding-wont-come-out</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Hiding and Won't Come Out - What It Means</image:caption>
+      <image:title>Cat Hiding Behavior</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-breathing-mouth-open</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Breathing with Mouth Open - Emergency Signs</image:caption>
+      <image:title>Cat Open Mouth Breathing</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-drooling-acting-weird</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Drooling and Acting Weird - Warning Signs</image:caption>
+      <image:title>Cat Drooling Weird</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-third-eyelid-showing</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Third Eyelid Showing - Causes &amp; Treatment</image:caption>
+      <image:title>Cat Third Eyelid</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/kitten-not-pooping-2-days</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Kitten Not Pooping for 2 Days - What to Do</image:caption>
+      <image:title>Kitten Not Pooping</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-meowing-loudly-at-night</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Meowing Loudly at Night - Solutions &amp; Causes</image:caption>
+      <image:title>Cat Night Meowing</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/indoor-cat-trying-escape</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Indoor Cat Trying to Escape - Behavior Guide</image:caption>
+      <image:title>Cat Escape Behavior</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/cat-urinating-outside-litter-box</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Cat Urinating Outside Litter Box - Solutions</image:caption>
+      <image:title>Cat Litter Box Problems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/parrot-plucking-feathers</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Parrot Plucking Feathers - Causes &amp; Solutions</image:caption>
+      <image:title>Parrot Feather Plucking</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/budgie-sitting-bottom-cage</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Budgie Sitting at Bottom of Cage - Warning Signs</image:caption>
+      <image:title>Budgie Bottom Sitting</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/bird-breathing-heavy-tail-bobbing</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Bird Breathing Heavy with Tail Bobbing - Emergency</image:caption>
+      <image:title>Bird Breathing Heavy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/hamster-not-eating-lethargic</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Hamster Not Eating and Lethargic - Care Guide</image:caption>
+      <image:title>Hamster Not Eating</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/guinea-pig-wheeking-constantly</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Guinea Pig Wheeking Constantly - What It Means</image:caption>
+      <image:title>Guinea Pig Wheeking</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/rabbit-not-pooping-normally</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Rabbit Not Pooping Normally - GI Stasis Guide</image:caption>
+      <image:title>Rabbit Pooping Problems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/ferret-losing-hair-patches</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Ferret Losing Hair in Patches - Causes &amp; Treatment</image:caption>
+      <image:title>Ferret Hair Loss</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/chinchilla-fur-slipping</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Chinchilla Fur Slipping - Stress Response Guide</image:caption>
+      <image:title>Chinchilla Fur Slipping</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/goldfish-swimming-upside-down</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Goldfish Swimming Upside Down - Swim Bladder Help</image:caption>
+      <image:title>Goldfish Upside Down</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://petwellbot.com/betta-fish-not-eating-3-days</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
+      <image:caption>Betta Fish Not Eating for 3 Days - Recovery Guide</image:caption>
+      <image:title>Betta Not Eating</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://petwellbot.com/about</loc>
     <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>
