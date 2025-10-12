@@ -9,36 +9,36 @@ export default defineConfig({
   plugins: [
     react(),
     runtimeErrorOverlay(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg}'],
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'google-fonts-cache',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
-              }
-            }
-          },
-          {
-            urlPattern: /^https:\/\/images\.unsplash\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'unsplash-images-cache',
-              expiration: {
-                maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
-              }
-            }
-          }
-        ]
-      }
-    }),
+    // VitePWA({
+    //   registerType: 'autoUpdate',
+    //   workbox: {
+    //     globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg}'],
+    //     runtimeCaching: [
+    //       {
+    //         urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+    //         handler: 'CacheFirst',
+    //         options: {
+    //           cacheName: 'google-fonts-cache',
+    //           expiration: {
+    //             maxEntries: 10,
+    //             maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+    //           }
+    //         }
+    //       },
+    //       {
+    //         urlPattern: /^https:\/\/images\.unsplash\.com\/.*/i,
+    //         handler: 'CacheFirst',
+    //         options: {
+    //           cacheName: 'unsplash-images-cache',
+    //           expiration: {
+    //             maxEntries: 50,
+    //             maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
+    //           }
+    //         }
+    //       }
+    //     ]
+    //   }
+    // }),
     visualizer({
       filename: 'dist/stats.html',
       open: false,
