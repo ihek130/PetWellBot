@@ -249,28 +249,3 @@ input:focus-visible {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-
-/* Global Mobile Adaptation - Auto-adjust content to fit all screen sizes */
-@media (max-width: 640px) {
-  /* Prevent horizontal overflow on small screens */
-  html, body {
-    overflow-x: hidden;
-    max-width: 100vw;
-  }
-  
-  /* Auto-scale content to fit viewport */
-  * {
-    max-width: 100%;
-  }
-  
-  /* Ensure fixed elements don't overflow */
-  .fixed {
-    max-width: 100vw;
-  }
-  
-  /* Adjust padding for better mobile fit */
-  .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-}
