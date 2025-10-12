@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/seo-head";
+import { Footer } from "@/components/footer";
 import { ArrowRight, Heart, AlertTriangle, CheckCircle, Star } from "lucide-react";
 import { Link } from "wouter";
 
@@ -547,6 +548,8 @@ export default function VomitingNausea() {
           })
         }}
       />
+
+      <Footer />
     </div>
   );
 }
