@@ -66,7 +66,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
-    target: 'esnext',
+    target: ['es2015', 'safari11'],
     minify: 'esbuild',
     cssMinify: true,
     sourcemap: false,
