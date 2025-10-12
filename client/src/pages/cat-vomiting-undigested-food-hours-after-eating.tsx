@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/seo-head";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Footer } from "@/components/footer";
 import { AlertTriangle, Heart, Clock, Utensils, Activity, ArrowRight, CheckCircle, XCircle, AlertCircle } from "lucide-react";
 import { Link } from "wouter";
 
@@ -437,6 +438,8 @@ export default function CatVomitingUndigestedFoodHoursAfterEating() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

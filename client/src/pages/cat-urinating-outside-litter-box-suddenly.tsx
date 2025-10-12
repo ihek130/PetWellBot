@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/seo-head";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Footer } from "@/components/footer";
 import { AlertTriangle, Heart, Droplet, Clock, Activity, ArrowRight, CheckCircle, XCircle, Home } from "lucide-react";
 import { Link } from "wouter";
 
@@ -500,6 +501,8 @@ export default function CatUrinatingOutsideLitterBoxSuddenly() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

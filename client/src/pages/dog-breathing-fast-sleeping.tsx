@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/seo-head";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Footer } from "@/components/footer";
 
 export default function DogBreathingFastSleeping() {
   return (
@@ -630,6 +631,8 @@ export default function DogBreathingFastSleeping() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

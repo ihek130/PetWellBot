@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/seo-head";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Footer } from "@/components/footer";
 import { AlertTriangle, Heart, Clock, Activity, ArrowRight, CheckCircle, XCircle, Droplets } from "lucide-react";
 import { Link } from "wouter";
 
@@ -477,6 +478,8 @@ export default function GoldfishSwimmingUpsideDown() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

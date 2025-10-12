@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/seo-head";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Footer } from "@/components/footer";
 import { AlertTriangle, Heart, DoorOpen, Clock, Activity, ArrowRight, CheckCircle, XCircle, Shield } from "lucide-react";
 import { Link } from "wouter";
 
@@ -435,6 +436,8 @@ export default function IndoorCatTryingEscapeSuddenly() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

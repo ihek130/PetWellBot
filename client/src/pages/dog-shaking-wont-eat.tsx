@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/seo-head";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Footer } from "@/components/footer";
+
 
 export default function DogShakingWontEat() {
   return (
@@ -615,6 +617,8 @@ export default function DogShakingWontEat() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

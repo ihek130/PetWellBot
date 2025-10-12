@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/seo-head";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { Footer } from "@/components/footer";
 import { AlertTriangle, Heart, Activity, Bone, Footprints, Clock, ArrowRight, CheckCircle, XCircle } from "lucide-react";
 import { Link } from "wouter";
 
@@ -687,6 +688,8 @@ export default function DogLimpingFrontLeftLeg() {
           })
         }}
       />
+
+      <Footer />
     </div>
   );
 }
