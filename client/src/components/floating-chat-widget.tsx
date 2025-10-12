@@ -31,8 +31,8 @@ const FloatingChatWidget = memo(({ onChatStart }: FloatingChatWidgetProps) => {
 
   return (
     <>
-      {/* Social Proof Badge - Positioned for mobile/desktop */}
-      <div className="fixed bottom-20 right-4 md:bottom-24 md:right-6 z-40 pointer-events-none">
+      {/* Social Proof Badge - More prominent on small screens */}
+      <div className="fixed bottom-20 right-2 md:bottom-24 md:right-6 z-40 pointer-events-none">
         <div className="bg-white shadow-lg rounded-full px-3 py-1 border border-emerald-200 animate-in slide-in-from-bottom-2 duration-500">
           <span className="text-xs text-emerald-600 font-medium">
             {helpedToday} pets helped today
@@ -40,11 +40,11 @@ const FloatingChatWidget = memo(({ onChatStart }: FloatingChatWidgetProps) => {
         </div>
       </div>
 
-      {/* Main Chat Button */}
+      {/* Main Chat Button - More prominent on small screens */}
       <Button
         onClick={handleChatStart}
         className={`
-          fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50
+          fixed bottom-4 right-2 md:bottom-6 md:right-6 z-50
           h-14 w-14 md:h-16 md:w-16 rounded-full 
           bg-emerald-600 hover:bg-emerald-700 
           shadow-lg hover:shadow-xl
