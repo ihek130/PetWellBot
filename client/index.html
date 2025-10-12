@@ -87,12 +87,38 @@
             
             // Track Core Web Vitals
             if ('PerformanceObserver' in window) {
-              // LCP tracking
+                            // LCP tracking
               new PerformanceObserver((entryList) => {
                 const entries = entryList.getEntries();
                 const lastEntry = entries[entries.length - 1];
                 console.log(' LCP:', Math.round(lastEntry.startTime) + 'ms');
               }).observe({ entryTypes: ['largest-contentful-paint'] });
+            }
+          }, 0);
+        });
+      }
+    </script>
+    
+    <!-- Emergency Error Display for Debugging iPhone Issue -->
+    <script>
+      window.addEventListener('error', function(e) {
+        var errorDiv = document.createElement('div');
+        errorDiv.style.cssText = 'position:fixed;top:0;left:0;right:0;background:red;color:white;padding:20px;z-index:99999;font-size:14px;max-height:300px;overflow:auto;';
+        errorDiv.innerHTML = '<strong>ERROR:</strong><br>' + e.message + '<br><strong>File:</strong> ' + e.filename + '<br><strong>Line:</strong> ' + e.lineno;
+        document.body.appendChild(errorDiv);
+      });
+      
+      window.addEventListener('unhandledrejection', function(e) {
+        var errorDiv = document.createElement('div');
+        errorDiv.style.cssText = 'position:fixed;top:0;left:0;right:0;background:orange;color:white;padding:20px;z-index:99999;font-size:14px;max-height:300px;overflow:auto;';
+        errorDiv.innerHTML = '<strong>PROMISE ERROR:</strong><br>' + e.reason;
+        document.body.appendChild(errorDiv);
+      });
+    </script>
+  </body>
+</html>
+
+```
             }
           }, 0);
         });
