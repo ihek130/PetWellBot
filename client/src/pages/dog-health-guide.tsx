@@ -3,6 +3,7 @@ import { Button } from "../components/ui/button";
 import { SEOHead } from "../components/seo-head";
 import { Breadcrumb } from "../components/breadcrumb";
 import { RelatedContent } from "../components/related-content";
+import { Footer } from "../components/footer";
 import { ArrowRight, Heart, AlertTriangle, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
 
@@ -299,6 +300,8 @@ export default function DogHealthGuide() {
 
       {/* Strategic Internal Linking for SEO */}
       <RelatedContent currentPage="/dog-health-guide" category="dog" maxItems={4} />
+
+      <Footer />
     </div>
   );
 }
