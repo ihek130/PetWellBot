@@ -21,7 +21,9 @@ const FloatingChatWidget = memo(({ onChatStart }: FloatingChatWidgetProps) => {
     
     // Analytics tracking with performance consideration
     if (typeof window !== 'undefined' && (window as any).gtag) {
-      requestIdleCallback(() => {
+      // Fallback for Safari iOS which doesn't support requestIdleCallback
+      const scheduleTask = (window as any).requestIdleCallback || setTimeout;
+      scheduleTask(() => {
         (window as any).gtag('event', 'chat_widget_opened', {
           timestamp: new Date().toISOString(),
         });
