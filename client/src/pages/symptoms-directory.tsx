@@ -465,25 +465,25 @@ export default function SymptomsDirectory() {
       {/* CTA Section */}
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto px-4">
             <Card className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
-              <CardContent className="p-8 text-center">
-                <h2 className="text-3xl font-bold mb-4">Can't Find Your Pet's Symptom?</h2>
-                <p className="text-xl mb-6 text-emerald-100">
+              <CardContent className="p-4 sm:p-8 text-center">
+                <h2 className="text-xl sm:text-3xl font-bold mb-3 sm:mb-4">Can't Find Your Pet's Symptom?</h2>
+                <p className="text-base sm:text-xl mb-4 sm:mb-6 text-emerald-100">
                   Use our free AI-powered symptom checker to describe what you're seeing. 
                   Get instant analysis and personalized guidance for any pet health concern.
                 </p>
                 <Link to="/">
                   <Button 
                     size="lg" 
-                    className="bg-white text-emerald-600 hover:bg-emerald-50 shadow-lg hover:shadow-xl transition-all duration-200 font-semibold px-8 py-4"
+                    className="bg-white text-emerald-600 hover:bg-emerald-50 shadow-lg hover:shadow-xl transition-all duration-200 font-semibold px-4 sm:px-8 py-3 sm:py-4 text-sm sm:text-base w-full sm:w-auto"
                   >
-                    <Heart className="w-5 h-5 mr-2" />
+                    <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Start Free Symptom Check Now
-                    <ArrowRight className="w-5 h-5 ml-2" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                   </Button>
                 </Link>
-                <p className="text-sm mt-4 text-emerald-100">
+                <p className="text-xs sm:text-sm mt-3 sm:mt-4 text-emerald-100">
                   ✓ 24/7 Available ✓ All Pet Types ✓ Instant Results ✓ Completely Free
                 </p>
               </CardContent>

@@ -249,3 +249,81 @@ input:focus-visible {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+
+/* Mobile Adaptation for Small Screens - Safe Rules Only */
+@media (max-width: 640px) {
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Adjust container padding for better fit */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Make cards responsive */
+  .card, [class*="card"] {
+    max-width: 100%;
+  }
+  
+  /* Fix CTA sections on symptom pages - reduce padding */
+  .bg-gradient-to-r.from-emerald-600,
+  .bg-gradient-to-r.from-blue-600,
+  .bg-gradient-to-r.from-purple-600,
+  .bg-gradient-to-r.from-amber-600,
+  .bg-gradient-to-br.from-emerald-600,
+  .bg-gradient-to-br.from-blue-600 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Scale down CTA card content */
+  .bg-gradient-to-r .p-8,
+  .bg-gradient-to-br .p-8 {
+    padding: 1rem !important;
+  }
+  
+  /* Responsive text sizes for CTA headings */
+  .bg-gradient-to-r .text-3xl,
+  .bg-gradient-to-br .text-3xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+  
+  /* Responsive text for descriptions */
+  .bg-gradient-to-r .text-xl,
+  .bg-gradient-to-br .text-xl {
+    font-size: 0.9rem !important;
+    line-height: 1.4rem !important;
+  }
+  
+  /* Make CTA buttons full width and smaller */
+  .bg-gradient-to-r button,
+  .bg-gradient-to-br button {
+    width: 100%;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  /* Scale down icons in CTA buttons */
+  .bg-gradient-to-r button svg,
+  .bg-gradient-to-br button svg {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  
+  /* Smaller footer text in CTAs */
+  .bg-gradient-to-r .text-sm,
+  .bg-gradient-to-br .text-sm {
+    font-size: 0.7rem !important;
+  }
+}
+
