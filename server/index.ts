@@ -158,79 +158,79 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/dog-vomiting-yellow-foam</loc>
+    <loc>https://petwellbot.com/dog-vomiting-yellow-foam-night</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Dog Vomiting Yellow Foam - Causes &amp; Treatment</image:caption>
+      <image:caption>Dog Vomiting Yellow Foam at Night - Causes &amp; Treatment</image:caption>
       <image:title>Dog Vomiting Yellow Foam</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/dog-ate-chocolate</loc>
+    <loc>https://petwellbot.com/dog-ate-chocolate-3-hours-ago</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Dog Ate Chocolate - Emergency Response Guide</image:caption>
+      <image:caption>Dog Ate Chocolate 3 Hours Ago - Emergency Response Guide</image:caption>
       <image:title>Dog Chocolate Toxicity</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/dog-limping-no-pain</loc>
+    <loc>https://petwellbot.com/dog-limping-front-left-leg-suddenly</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Dog Limping But No Pain - What It Means</image:caption>
-      <image:title>Dog Limping No Pain</image:title>
+      <image:caption>Dog Limping Front Left Leg Suddenly - Emergency Care Guide</image:caption>
+      <image:title>Dog Limping Front Leg</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/dog-wont-drink-water</loc>
+    <loc>https://petwellbot.com/dog-wont-drink-water-will-eat</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Dog Won't Drink Water - Causes &amp; Solutions</image:caption>
+      <image:caption>Dog Won't Drink Water But Will Eat - Causes &amp; Solutions</image:caption>
       <image:title>Dog Not Drinking Water</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/dog-diarrhea-blood</loc>
+    <loc>https://petwellbot.com/dog-diarrhea-blood-emergency</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Dog Diarrhea with Blood - Emergency Guide</image:caption>
+      <image:caption>Dog Diarrhea with Blood Emergency - Immediate Care Guide</image:caption>
       <image:title>Dog Bloody Diarrhea</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/senior-dog-weak-hind-legs</loc>
+    <loc>https://petwellbot.com/senior-dog-weak-back-legs</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Senior Dog Weak Hind Legs - Causes &amp; Care</image:caption>
+      <image:caption>Senior Dog Weak Back Legs - Causes &amp; Care</image:caption>
       <image:title>Senior Dog Weak Legs</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/puppy-eating-grass-frantically</loc>
+    <loc>https://petwellbot.com/puppy-ate-grass-vomiting</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Puppy Eating Grass Frantically - What to Do</image:caption>
+      <image:caption>Puppy Ate Grass and Vomiting - What to Do</image:caption>
       <image:title>Puppy Eating Grass</image:title>
     </image:image>
   </url>
@@ -257,35 +257,35 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/dog-licking-paws-frantically</loc>
+    <loc>https://petwellbot.com/dog-licking-paws-night</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Dog Licking Paws Frantically - Causes &amp; Relief</image:caption>
+      <image:caption>Dog Licking Paws at Night - Causes &amp; Relief</image:caption>
       <image:title>Dog Licking Paws</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/cat-vomiting-undigested-food</loc>
+    <loc>https://petwellbot.com/cat-vomiting-undigested-food-hours-after-eating</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Cat Vomiting Undigested Food - Causes &amp; Treatment</image:caption>
+      <image:caption>Cat Vomiting Undigested Food Hours After Eating - Causes &amp; Treatment</image:caption>
       <image:title>Cat Vomiting Undigested</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/cat-not-eating-drinking</loc>
+    <loc>https://petwellbot.com/cat-not-eating-drinking-3-days</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Cat Not Eating or Drinking - Emergency Guide</image:caption>
+      <image:caption>Cat Not Eating or Drinking for 3 Days - Emergency Guide</image:caption>
       <image:title>Cat Not Eating Drinking</image:title>
     </image:image>
   </url>
@@ -301,13 +301,13 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/cat-breathing-mouth-open</loc>
+    <loc>https://petwellbot.com/cat-breathing-mouth-open-after-playing</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Cat Breathing with Mouth Open - Emergency Signs</image:caption>
+      <image:caption>Cat Breathing with Mouth Open After Playing - Emergency Signs</image:caption>
       <image:title>Cat Open Mouth Breathing</image:title>
     </image:image>
   </url>
@@ -323,13 +323,13 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/cat-third-eyelid-showing</loc>
+    <loc>https://petwellbot.com/cat-third-eyelid-showing-suddenly</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Cat Third Eyelid Showing - Causes &amp; Treatment</image:caption>
+      <image:caption>Cat Third Eyelid Showing Suddenly - Causes &amp; Treatment</image:caption>
       <image:title>Cat Third Eyelid</image:title>
     </image:image>
   </url>
@@ -345,46 +345,46 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/cat-meowing-loudly-at-night</loc>
+    <loc>https://petwellbot.com/cat-meowing-night-after-moving</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Cat Meowing Loudly at Night - Solutions &amp; Causes</image:caption>
+      <image:caption>Cat Meowing at Night After Moving - Solutions &amp; Causes</image:caption>
       <image:title>Cat Night Meowing</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/indoor-cat-trying-escape</loc>
+    <loc>https://petwellbot.com/indoor-cat-trying-escape-suddenly</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Indoor Cat Trying to Escape - Behavior Guide</image:caption>
+      <image:caption>Indoor Cat Trying to Escape Suddenly - Behavior Guide</image:caption>
       <image:title>Cat Escape Behavior</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/cat-urinating-outside-litter-box</loc>
+    <loc>https://petwellbot.com/cat-urinating-outside-litter-box-suddenly</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Cat Urinating Outside Litter Box - Solutions</image:caption>
+      <image:caption>Cat Urinating Outside Litter Box Suddenly - Solutions</image:caption>
       <image:title>Cat Litter Box Problems</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/parrot-plucking-feathers</loc>
+    <loc>https://petwellbot.com/parrot-plucking-feathers-out</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Parrot Plucking Feathers - Causes &amp; Solutions</image:caption>
+      <image:caption>Parrot Plucking Feathers Out - Causes &amp; Solutions</image:caption>
       <image:title>Parrot Feather Plucking</image:title>
     </image:image>
   </url>
@@ -400,24 +400,24 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/bird-breathing-heavy-tail-bobbing</loc>
+    <loc>https://petwellbot.com/bird-breathing-heavy-after-flying</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Bird Breathing Heavy with Tail Bobbing - Emergency</image:caption>
+      <image:caption>Bird Breathing Heavy After Flying - Emergency Signs</image:caption>
       <image:title>Bird Breathing Heavy</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/hamster-not-eating-lethargic</loc>
+    <loc>https://petwellbot.com/hamster-not-eating-drinking</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Hamster Not Eating and Lethargic - Care Guide</image:caption>
+      <image:caption>Hamster Not Eating or Drinking - Care Guide</image:caption>
       <image:title>Hamster Not Eating</image:title>
     </image:image>
   </url>
@@ -433,24 +433,24 @@ app.use((req, res, next) => {
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/rabbit-not-pooping-normally</loc>
+    <loc>https://petwellbot.com/rabbit-not-pooping-12-hours</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Rabbit Not Pooping Normally - GI Stasis Guide</image:caption>
+      <image:caption>Rabbit Not Pooping for 12 Hours - GI Stasis Guide</image:caption>
       <image:title>Rabbit Pooping Problems</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://petwellbot.com/ferret-losing-hair-patches</loc>
+    <loc>https://petwellbot.com/ferret-hair-loss-suddenly</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://petwellbot.com/images/logo-icon.svg</image:loc>
-      <image:caption>Ferret Losing Hair in Patches - Causes &amp; Treatment</image:caption>
+      <image:caption>Ferret Hair Loss Suddenly - Causes &amp; Treatment</image:caption>
       <image:title>Ferret Hair Loss</image:title>
     </image:image>
   </url>
